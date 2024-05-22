@@ -1,0 +1,198 @@
+:root {
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-bluee-bg : hsl(217, 54%, 11%); /* Background */
+--Very-dark-blue-card : hsl(216, 50%, 16%); /* Card NFT */
+--Very-dark-blue: hsl(215, 32%, 27%); /* <hr> */
+--White: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 1026px) and (max-width: 1550px) { /* Desktop */
+    .nft-image {
+    width: 89%;
+    height: 46%;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+.nft-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    width: 75%;
+    height: 80%;
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 20px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1025px) { /* Tablet e portátils */
+    
+    .nft-image {
+        width: 89%;
+        height: 50%;
+        border-radius: 20px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nft-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid;
+        width: 100%;
+        height: 70%;
+        background-color: var(--Very-dark-blue-card);
+        border-radius: 20px;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 426px) {  /* Celular (P, G) */
+    
+    .nft-image {
+        width: 89%;
+        height: 46%;
+        border-radius: 20px;
+        transition: transform 0.5s ease-in-out;
+    }
+    .nft-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid;
+        width: 90%;
+        height: 60%;
+        background-color: var(--Very-dark-blue-card);
+        border-radius: 20px;
+    }
+
+}
+
+
+
+body,html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Outfit';
+    background-color: var(--Very-dark-bluee-bg);
+}
+
+hr {
+    width: 90%;
+    color: var(--Very-dark-blue);
+    opacity: 35%;
+}
+
+
+
+
+.info-nft {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info-nft p {
+    width: 88%;
+    margin-left: 6%;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--Soft-blue);
+}
+
+.info-nft h2 {
+    margin-left: 6%;
+    color: var(--White);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.price-nft {
+    display: inline-flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.price-nft img {
+    transform: translateY(2.5px);
+}
+
+.price-nft h3 {
+    color:  var(--Cyan);
+}
+
+.price-nft p {
+    color: var(--Soft-blue);
+}
+
+.creator-nft {
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+ align-items: center;
+ margin-left: 5%;
+color: var(--Soft-blue);
+}
+
+span {
+    color: var(--White);
+    cursor: pointer;
+}
+
+.creator-nft img {
+    width: 12%;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+
+.attribution { 
+    color: var(--White);
+    margin: 10px;
+    font-size: 11px;
+    text-align: center;
+     }
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+.focus i {
+    height: 10%;
+}
+
+/*.focus {
+    position:  absolute;
+    transform: translate(-50%, -320%);
+    opacity: 100%;
+}*/
+
+.info-nft h2:hover {
+    color: var(--Cyan);
+}
+
+span:hover {
+    color: var(--Cyan);
+}
+.nft-image:hover {
+  opacity: 70%;
+}
+
+.nft-image:active {
+    opacity: 100%;
+    z-index: 2;
+    transform: scale(1.13);
+}
+
